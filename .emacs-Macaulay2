@@ -1,0 +1,24 @@
+;-*-emacs-lisp-*-
+
+;; add "/usr/share/emacs/site-lisp" to load-path if it isn't there
+(if (not (member "/usr/share/emacs/site-lisp" load-path))
+     (setq load-path (cons "/usr/share/emacs/site-lisp" load-path)))
+
+;; add "/usr/bin" to exec-path if it isn't there
+(if (not (member "/usr/bin" exec-path))
+     (setq exec-path (cons "/usr/bin" exec-path)))
+
+;; add "/usr/share/info" to Info-default-directory-list if it isn't there
+(if (not (member "/usr/share/info" Info-default-directory-list))
+     (setq Info-default-directory-list (cons "/usr/share/info" Info-default-directory-list)))
+
+;; this version will give an error if M2-init.el is not found:
+(load "M2-init")
+
+;; this version will not give an error if M2-init.el is not found:
+;(load "M2-init" t)
+
+; You may comment out the following line with an initial semicolon if you 
+; want to use your f12 key for something else.  However, this action
+; will be undone the next time you run setup() or setupEmacs().
+(global-set-key [ f12 ] 'M2)
