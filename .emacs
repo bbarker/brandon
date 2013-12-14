@@ -5,6 +5,9 @@
 
 (setq column-number-mode t)
 
+(add-to-list 'load-path "julia")
+(require 'julia-mode)
+
 (load "auctex.el" nil t t)
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
