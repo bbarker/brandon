@@ -5,7 +5,7 @@
 
 (setq column-number-mode t)
 
-(add-to-list 'load-path "julia")
+(add-to-list 'load-path "~/julia")
 (require 'julia-mode)
 
 (load "auctex.el" nil t t)
