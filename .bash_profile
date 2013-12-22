@@ -52,10 +52,22 @@ shopt -s checkwinsize
 export OZHOME=/media/RAID5/oz
 export PATH=$PATH:$OZHOME/bin
 
-export ATSHOME=/media/RAID5/share/ATS_learning/ats-lang-anairiats-0.2.10-unstable
-export ATSHOMERELOC=ATS-0.2.10
-export PATH=$PATH:$ATSHOME/bin
+# Probably better to change this to a machine specific (hostname)
+# check in the future.
+if [ "$(uname)" == "Darwin" ]; then
+    export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
+    export ATSHOMERELOC=ATS-0.2.11
+elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ] ||  
+     [ "$(expr substr $(uname -s) 1 6)" == "CYGWIN" ]; then
+    export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
+    export ATSHOMERELOC=ATS-0.2.11
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    export ATSHOME=/media/RAID5/share/ATS_learning/ats-lang-anairiats-0.2.10-unstable
+    export ATSHOMERELOC=ATS-0.2.10    
+fi
 
+
+export PATH=$PATH:$ATSHOME/bin
 export PATSHOME=/media/RAID5/share/ATS_learning/ATS-Postiats
 export PATH=$PATH:$PATSHOME/bin
 
