@@ -13,7 +13,7 @@
      (setq Info-default-directory-list (cons "/usr/share/info" Info-default-directory-list)))
 
 ;; this version will give an error if M2-init.el is not found:
-(load "M2-init")
+(load "M2-init" t) ; missing-ok
 
 ;; this version will not give an error if M2-init.el is not found:
 ;(load "M2-init" t)

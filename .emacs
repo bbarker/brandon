@@ -34,7 +34,7 @@
 (setq py-load-pymacs-p t)
 
 ;; 
-(load "/usr/share/emacs/site-lisp/ipython.el")
+(load "/usr/share/emacs/site-lisp/ipython.el" t) ; missing-ok
 (put 'downcase-region 'disabled nil)
 
 
