@@ -1,5 +1,5 @@
 ;; Macaulay 2 start
-(load "~/.emacs-Macaulay2" t)
+(load "~/.emacs-Macaulay2" t)  ; t = true, for 'missing-ok'
 ;; Macaulay 2 end
 
 
@@ -24,9 +24,10 @@
 
 
 ;;(load "~/emacs/ats-mode.el")
-(load "~/.emacs.d/ats-mode.el")
-(load "~/.emacs.d/pastebin.el")
-(load "~/.emacs.d/ats-flymake.el")
+(load (concat (getenv "PATSHOME") "/utils/emacs/ats2-mode.el") t)
+(load "~/.emacs.d/ats-mode.el" t)
+(load "~/.emacs.d/pastebin.el" t) 
+(load "~/.emacs.d/ats-flymake.el" t)
 (setq py-install-directory "~/.emacs.d/python-mode.el-6.1.0")
 (add-to-list 'load-path py-install-directory)
 (require 'python-mode)
@@ -34,7 +35,7 @@
 (setq py-load-pymacs-p t)
 
 ;; 
-(load "/usr/share/emacs/site-lisp/ipython.el" t) ; missing-ok
+(load "/usr/share/emacs/site-lisp/ipython.el" t)
 (put 'downcase-region 'disabled nil)
 
 
