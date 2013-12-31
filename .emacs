@@ -24,9 +24,12 @@
 
 
 (load (concat (getenv "PATSHOME") "/utils/emacs/ats2-mode.el") t)
-(load "~/.emacs.d/ats-mode.el" t)
-(load "~/.emacs.d/pastebin.el" t) 
+;; For ATS1:
+;(load "~/.emacs.d/ats-mode.el" t)
 ;(load "~/.emacs.d/ats-flymake.el" t)
+
+(load "~/.emacs.d/pastebin.el" t) 
+
 
 (setq py-install-directory "~/.emacs.d/python-mode.el-6.1.0")
 (add-to-list 'load-path py-install-directory)
