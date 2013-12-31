@@ -23,11 +23,11 @@
  )
 
 
-;;(load "~/emacs/ats-mode.el")
 (load (concat (getenv "PATSHOME") "/utils/emacs/ats2-mode.el") t)
 (load "~/.emacs.d/ats-mode.el" t)
 (load "~/.emacs.d/pastebin.el" t) 
-(load "~/.emacs.d/ats-flymake.el" t)
+;(load "~/.emacs.d/ats-flymake.el" t)
+
 (setq py-install-directory "~/.emacs.d/python-mode.el-6.1.0")
 (add-to-list 'load-path py-install-directory)
 (require 'python-mode)
@@ -56,5 +56,19 @@ region."
   :type 'string)
 
 
+(let ((default-directory "~/.emacs.d/elpa/"))
+  (normal-top-level-add-subdirs-to-load-path))
+
+(require 's)
+(load "~/flycheck/flycheck.el")
+(setq flycheck-check-syntax-automatically '(mode-enabled save idle-change))
+
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+
+
 ;;; Prevent Extraneous Tabs
 (setq-default indent-tabs-mode nil)
+
