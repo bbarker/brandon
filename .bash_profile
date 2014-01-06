@@ -1,8 +1,8 @@
 export FBAHOME=$HOME
 
 export PATH=$PATH:$FBAHOME/FBA/local/bin
-export GUROBI_HOME=$FBAHOME/FBA/local
-export GRB_LICENSE_FILE=$FBAHOME/FBA/gurobi_lic/gurobi.lic
+#export GUROBI_HOME=$FBAHOME/FBA/local
+#export GRB_LICENSE_FILE=$FBAHOME/FBA/gurobi_lic/gurobi.lic
 
 #export MOSEKPLATFORM=linux64x86
 #export PATH=$PATH:$FBAHOME/FBA/mosek/6/tools/platform/$MOSEKPLATFORM/bin
