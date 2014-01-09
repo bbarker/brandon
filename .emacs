@@ -8,7 +8,8 @@
 (add-to-list 'load-path "~/julia")
 (require 'julia-mode)
 
-(load "auctex.el" nil t t)
+(load "auctex.el" t t t)
+
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
