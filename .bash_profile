@@ -1,8 +1,8 @@
 export FBAHOME=$HOME
 
 export PATH=$PATH:$FBAHOME/FBA/local/bin
-export GUROBI_HOME=$FBAHOME/FBA/local
-export GRB_LICENSE_FILE=$FBAHOME/FBA/gurobi_lic/gurobi.lic
+#export GUROBI_HOME=$FBAHOME/FBA/local
+#export GRB_LICENSE_FILE=$FBAHOME/FBA/gurobi_lic/gurobi.lic
 
 #export MOSEKPLATFORM=linux64x86
 #export PATH=$PATH:$FBAHOME/FBA/mosek/6/tools/platform/$MOSEKPLATFORM/bin
@@ -54,23 +54,17 @@ export PATH=$PATH:$OZHOME/bin
 
 # Probably better to change this to a machine specific (hostname)
 # check in the future.
-if [ "$(uname)" == "Darwin" ]; then
-    export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
-    export ATSHOMERELOC=ATS-0.2.11
-elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ] ||  
-     [ "$(expr substr $(uname -s) 1 6)" == "CYGWIN" ]; then
-    export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
-    export ATSHOMERELOC=ATS-0.2.11
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    export ATSHOME=/media/RAID5/share/ATS_learning/ats-lang-anairiats-0.2.10-unstable
-    export ATSHOMERELOC=ATS-0.2.10    
-fi
-
-
+# if [ "$(uname)" == "Darwin" ]; then
+# elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ] ||  
+#      [ "$(expr substr $(uname -s) 1 6)" == "CYGWIN" ]; then
+# elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+# fi
+export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
+export ATSHOMERELOC=ATS-0.2.11
 export PATH=$PATH:$ATSHOME/bin
-export PATSHOME=/media/RAID5/share/ATS_learning/ATS-Postiats
+export PATSHOME=$HOME/ATS-Postiats
+export PATSHOMERELOC=$PATSHOME
 export PATH=$PATH:$PATSHOME/bin
-
 
 ### Stuff for DREAM8 WholeCell competition ###
 export DREAM8HOME=$HOME/DREAM8
