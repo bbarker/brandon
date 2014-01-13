@@ -63,6 +63,7 @@ export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
 export ATSHOMERELOC=ATS-0.2.11
 export PATH=$PATH:$ATSHOME/bin
 export PATSHOME=$HOME/ATS-Postiats
+export PATSHOMERELOC=$PATSHOME
 export PATH=$PATH:$PATSHOME/bin
 
 ### Stuff for DREAM8 WholeCell competition ###
