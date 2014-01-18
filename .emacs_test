@@ -1,0 +1,2 @@
+(load "~/.emacs.d/ats-mode.el" t)
+(load "~/.emacs.d/ats-flymake.el" t)

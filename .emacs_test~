@@ -1,8 +1,5 @@
-(load "~/.emacs.d/window-number.el" t)   ; t = true, for 'missing-ok'
-(window-number-mode)
-
 ;; Macaulay 2 start
-(load "~/.emacs-Macaulay2" t)
+(load "~/.emacs-Macaulay2" t)  ; t = true, for 'missing-ok'
 ;; Macaulay 2 end
 
 
