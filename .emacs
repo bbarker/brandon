@@ -7,7 +7,7 @@
 
 
 (setq column-number-mode t)
-
+(global-auto-revert-mode 1)
 (add-to-list 'load-path "~/julia")
 (require 'julia-mode)
 
