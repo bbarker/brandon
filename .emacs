@@ -82,3 +82,4 @@ region."
 ;;; Prevent Extraneous Tabs
 (setq-default indent-tabs-mode nil)
 
+(setq-default ispell-program-name "aspell")
