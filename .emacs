@@ -26,6 +26,11 @@
   ;; If there is more than one, they won't work right.
  )
 
+;;;; This snippet enables lua-mode
+(load "~/.emacs.d/lua-mode.el" t)
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 (load (concat (getenv "PATSHOME") "/utils/emacs/ats2-mode.el") t)
 ;; For ATS1:
@@ -66,12 +71,12 @@ region."
   :type 'string)
 
 
+;; (require 's)
+;; (load "~/flycheck/flycheck.el")
+;; (setq flycheck-check-syntax-automatically '(mode-enabled save idle-change))
+
 (let ((default-directory "~/.emacs.d/elpa/"))
   (normal-top-level-add-subdirs-to-load-path))
-
-(require 's)
-(load "~/flycheck/flycheck.el")
-(setq flycheck-check-syntax-automatically '(mode-enabled save idle-change))
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
