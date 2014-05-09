@@ -1,6 +1,9 @@
 (load "~/.emacs.d/window-number.el" t)   ; t = true, for 'missing-ok'
 (window-number-mode)
 
+;; Turn off c indentation for now.
+(c-toggle-electric-state -1)
+
 ;; Macaulay 2 start
 (load "~/.emacs-Macaulay2" t)
 ;; Macaulay 2 end
