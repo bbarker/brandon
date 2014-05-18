@@ -1,0 +1,9 @@
+[submodule "emacs-clojure/cider"]
+	path = emacs-clojure/cider
+	url = https://github.com/clojure-emacs/cider.git
+[submodule "emacs-clojure/clojure-mode"]
+	path = emacs-clojure/clojure-mode
+	url = https://github.com/clojure-emacs/clojure-mode.git
+[submodule "emacs-clojure/dash.el"]
+	path = emacs-clojure/dash.el
+	url = https://github.com/magnars/dash.el.git

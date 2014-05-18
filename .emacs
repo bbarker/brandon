@@ -5,6 +5,14 @@
 (load "~/.emacs-Macaulay2" t)
 ;; Macaulay 2 end
 
+(add-to-list 'load-path "~/emacs-clojure/cider")
+(add-to-list 'load-path "~/emacs-clojure/clojure-mode")
+(add-to-list 'load-path "~/emacs-clojure/dash.el")
+(require 'cider)
+;
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(setq nrepl-hide-special-buffers t)
+(setq cider-repl-history-size 5000) 
 
 (setq column-number-mode t)
 (global-auto-revert-mode 1)
