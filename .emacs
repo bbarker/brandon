@@ -49,8 +49,8 @@
 
 
 (setq py-install-directory "~/.emacs.d/python-mode.el-6.1.0")
-(add-to-list 'auto-mode-alist '("\\.\\(s\\|d\\|h\\)ats\\'" . ats-two-mode-mode))
-(provide 'ats-two-mode-mode)
+(add-to-list 'auto-mode-alist '("\\.\\(s\\|d\\|h\\)ats\\'" . ats-mode))
+(provide 'ats-mode)
 
 (add-to-list 'load-path py-install-directory)
 (require 'python-mode)
