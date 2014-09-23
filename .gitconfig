@@ -1,0 +1,7 @@
+[core]
+	editor = emacs
+[user]
+	name = bbarker
+	email = beb82@cornell.edu
+[push]
+	default = matching

@@ -1,6 +1,6 @@
 (load "~/.emacs.d/window-number.el" t)   ; t = true, for 'missing-ok'
 (window-number-mode)
-
+ 
 ;; Macaulay 2 start
 (load "~/.emacs-Macaulay2" t)
 ;; Macaulay 2 end
@@ -96,3 +96,5 @@ region."
 (setq-default indent-tabs-mode nil)
 
 (setq-default ispell-program-name "aspell")
+
+(set-default 'cursor-type 'hollow)
