@@ -1,6 +1,10 @@
 (load "~/.emacs.d/window-number.el" t)   ; t = true, for 'missing-ok'
 (window-number-mode)
  
+(setq c-default-style "k&r"
+      c-basic-offset 2)
+ 
+ 
 ;; Macaulay 2 start
 (load "~/.emacs-Macaulay2" t)
 ;; Macaulay 2 end
