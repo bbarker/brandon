@@ -69,3 +69,7 @@ export PATH=$PATH:$PATSHOME/bin
 ### Stuff for DREAM8 WholeCell competition ###
 export DREAM8HOME=$HOME/DREAM8
 export PATH=$PATH:$DREAM8HOME/bitmill-bash:$DREAM8HOME/bitmill-bash/dream
+
+
+PLAN9=/usr/local/plan9port export PLAN9
+PATH=$PATH:$PLAN9/bin export PATH
