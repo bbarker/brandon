@@ -40,7 +40,8 @@
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
-(load (concat (getenv "PATSHOME") "/utils/emacs/ats2-mode.el") t)
+(load (concat (getenv "HOME")
+              "/ATS-Postiats-contrib/contrib/libats-/bbarker/emacs/ats2-mode.el") t)
 ;; For ATS1:
 ;(load "~/.emacs.d/ats-mode.el" t)
 ;(load "~/.emacs.d/ats-flymake.el" t)
