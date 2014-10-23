@@ -4,6 +4,10 @@
 ;;(load "~/.emacs.d/zenburn.el" t)
 ;;(zenburn)
  
+(setq c-default-style "k&r"
+      c-basic-offset 2)
+ 
+ 
 ;; Macaulay 2 start
 (load "~/.emacs-Macaulay2" t)
 ;; Macaulay 2 end
@@ -43,7 +47,8 @@
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
-(load (concat (getenv "PATSHOME") "/utils/emacs/ats2-mode.el") t)
+(load (concat (getenv "HOME")
+              "/ATS-Postiats-contrib/contrib/libats-/bbarker/emacs/ats2-mode.el") t)
 ;; For ATS1:
 ;(load "~/.emacs.d/ats-mode.el" t)
 ;(load "~/.emacs.d/ats-flymake.el" t)
