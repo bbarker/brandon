@@ -1,3 +1,11 @@
+# README
+#
+# To initialize git submodules (to the version I last used):
+# git submodule init && git submodule update
+# 
+#
+#
+#
 export FBAHOME=$HOME
 
 export PATH=$PATH:$FBAHOME/FBA/local/bin
