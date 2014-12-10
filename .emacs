@@ -4,10 +4,13 @@
 (setq c-default-style "k&r"
       c-basic-offset 2)
  
- 
 ;; Macaulay 2 start
 (load "~/.emacs-Macaulay2" t)
 ;; Macaulay 2 end
+
+;;; For older Emacs
+(add-to-list 'load-path "~/.emacs.d/cl-lib")
+(require 'cl-lib)
 
 (add-to-list 'load-path "~/emacs-clojure/cider")
 (add-to-list 'load-path "~/emacs-clojure/clojure-mode")
@@ -51,7 +54,6 @@
 ;(load "~/.emacs.d/ats-flymake.el" t)
 
 (load "~/.emacs.d/pastebin.el" t) 
-
 
 (setq py-install-directory "~/.emacs.d/python-mode.el-6.1.0")
 (add-to-list 'auto-mode-alist '("\\.\\(s\\|d\\|h\\)ats\\'" . ats-mode))
@@ -103,3 +105,4 @@ region."
 (setq-default ispell-program-name "aspell")
 
 (set-default 'cursor-type 'hollow)
+
