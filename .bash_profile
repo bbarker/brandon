@@ -74,6 +74,17 @@ export PATSHOME=$HOME/ATS-Postiats
 export PATSHOMERELOC=$HOME/ATS-Postiats-contrib
 export PATH=$PATH:$PATSHOME/bin
 
+if [[ "$(uname -a)" == "CYGWIN"*"x86_64"* ]] 
+then
+	export JAVA_HOME="/cygdrive/c/Program Files/Java/jdk1.8.0_25"
+	export PATH=$JAVA_HOME/bin:$PATH
+elif [[ "$(uname -a)" == "CYGWIN"*"i686"* ]] 
+then
+	export JAVA_HOME="/cygdrive/c/Program Files (x86)/Java/jdk1.8.0_25"
+	export PATH=$JAVA_HOME/bin:$PATH
+fi
+
+
 ### Stuff for DREAM8 WholeCell competition ###
 export DREAM8HOME=$HOME/DREAM8
 export PATH=$PATH:$DREAM8HOME/bitmill-bash:$DREAM8HOME/bitmill-bash/dream
