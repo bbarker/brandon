@@ -67,7 +67,7 @@ export PATH=$PATH:$OZHOME/bin
 #      [ "$(expr substr $(uname -s) 1 6)" == "CYGWIN" ]; then
 # elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 # fi
-export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
+export ATSHOME=$HOME/ats-lang-anairiats-0.2.12
 export ATSHOMERELOC=ATS-0.2.12
 export PATH=$PATH:$ATSHOME/bin
 export PATSHOME=$HOME/ATS-Postiats
