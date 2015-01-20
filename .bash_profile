@@ -68,7 +68,7 @@ export PATH=$PATH:$OZHOME/bin
 # elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 # fi
 export ATSHOME=$HOME/ats-lang-anairiats-0.2.11
-export ATSHOMERELOC=ATS-0.2.11
+export ATSHOMERELOC=ATS-0.2.12
 export PATH=$PATH:$ATSHOME/bin
 export PATSHOME=$HOME/ATS-Postiats
 export PATSHOMERELOC=$HOME/ATS-Postiats-contrib
@@ -76,7 +76,7 @@ export PATH=$PATH:$PATSHOME/bin
 
 if [[ "$(uname -a)" == "CYGWIN"*"x86_64"* ]] 
 then
-	export JAVA_HOME="/cygdrive/c/Program Files/Java/jdk1.8.0_25"
+	export JAVA_HOME="/usr/Java/jdk1.8.0_25"
 	export PATH=$JAVA_HOME/bin:$PATH
 elif [[ "$(uname -a)" == "CYGWIN"*"i686"* ]] 
 then
