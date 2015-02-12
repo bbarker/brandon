@@ -36,7 +36,7 @@ export MATLABPATH+=:$FBAHOME/FBA/FALCON
 #export MATLABPATH+=:$FBAHOME/FBA/local/ILOG/CPLEX_Studio_AcademicResearch122/cplex/matlab
 #export MATLABPATH+=:$FBAHOME/FBA/mosek/6/toolbox/r2009b
 
-export PYTHONPATH=$HOME/lib/python:$PYTHONPATH
+#export PYTHONPATH=$HOME/lib/python:$PYTHONPATH
 
 export R_LIBS=/home/brandon/local/lib64
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$FBAHOME/FBA/local/tomlab/shared
