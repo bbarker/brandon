@@ -62,11 +62,14 @@ export PATH=$PATH:$OZHOME/bin
 
 # Probably better to change this to a machine specific (hostname)
 # check in the future.
-# if [ "$(uname)" == "Darwin" ]; then
-# elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ] ||  
-#      [ "$(expr substr $(uname -s) 1 6)" == "CYGWIN" ]; then
-# elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-# fi
+if [ "$(uname)" == "Darwin" ]; then
+    [];
+elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ] ||  
+         [ "$(expr substr $(uname -s) 1 6)" == "CYGWIN" ]; then
+alias heroku='heroku.bat'    
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    [];
+fi
 export ATSHOME=$HOME/ats-lang-anairiats-0.2.12
 export ATSHOMERELOC=ATS-0.2.12
 export PATH=$PATH:$ATSHOME/bin
