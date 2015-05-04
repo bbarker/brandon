@@ -97,5 +97,6 @@ PATH=$PATH:$PLAN9/bin export PATH
 
 export EDITOR=/usr/bin/emacs
 
-
 eval `ssh-agent -s`
+
+PATH="/usr/local/heroku/bin:$PATH"
