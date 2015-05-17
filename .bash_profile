@@ -76,6 +76,9 @@ export PATH=$PATH:$ATSHOME/bin
 export PATSHOME=$HOME/ATS-Postiats
 export PATSHOMERELOC=$HOME/ATS-Postiats-contrib
 export PATH=$PATH:$PATSHOME/bin
+#
+export PERL5LIB=$PERL5LIB:$PATSHOMERELOC/contrib/libatscc/libatscc2pl
+
 
 if [[ "$(uname -a)" == "CYGWIN"*"x86_64"* ]] 
 then
