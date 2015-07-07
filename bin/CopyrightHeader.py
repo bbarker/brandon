@@ -41,6 +41,6 @@ def recursive_traversal(dir,  oldcopyright, copyright):
 
 
 oldcright = file(".pyLICENSE","r+").read()
-cright = file(".pyLICENSE","r+").read()
+cright = file(".pyLICENSE_new","r+").read()
 recursive_traversal("/home/brand_000/CloudLaunch", oldcright, cright)
 exit()
