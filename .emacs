@@ -15,7 +15,7 @@
 (add-to-list 'load-path "~/emacs-clojure/cider")
 (add-to-list 'load-path "~/emacs-clojure/clojure-mode")
 (add-to-list 'load-path "~/emacs-clojure/dash.el")
-(require 'cider)
+;;(require 'cider) ;; Why doesn't this load?
 ;
 (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 (setq nrepl-hide-special-buffers t)

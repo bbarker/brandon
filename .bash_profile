@@ -106,3 +106,4 @@ export PATH=/usr/local/oclint/bin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH
 
 
+export PATH=~/.rakudobrew/bin:$PATH
