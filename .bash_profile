@@ -82,12 +82,14 @@ export PERL5LIB=$PERL5LIB:$PATSHOMERELOC/contrib/libatscc/libatscc2pl
 
 if [[ "$(uname -a)" == "CYGWIN"*"x86_64"* ]] 
 then
-	export JAVA_HOME="/usr/Java/jdk1.8.0_25"
+	export JAVA_HOME="/usr/Java/jdk1.8.0_25" # this should be a symlink
 	export PATH=$JAVA_HOME/bin:$PATH
+        export PATH=$PATH:"C:\Program Files (x86)\scala\bin"
 elif [[ "$(uname -a)" == "CYGWIN"*"i686"* ]] 
 then
 	export JAVA_HOME="/cygdrive/c/Program Files (x86)/Java/jdk1.8.0_25"
 	export PATH=$JAVA_HOME/bin:$PATH
+        export PATH=$PATH:"C:\Program Files (x86)\scala\bin"        
 fi
 
 

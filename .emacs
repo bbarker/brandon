@@ -41,6 +41,18 @@
   ;; If there is more than one, they won't work right.
  )
 
+
+;; Some ERC settings:
+;;
+;; Auto-truncate the buffer:
+(setq erc-max-buffer-size 10000)      
+(setq erc-truncate-buffer-on-save t)
+(defvar erc-insert-post-hook)
+(add-hook 'erc-insert-post-hook
+          'erc-truncate-buffer)
+(setq erc-truncate-buffer-on-save t)
+
+
 ;;;; This snippet enables lua-mode
 (load "~/.emacs.d/lua-mode.el" t)
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
