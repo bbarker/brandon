@@ -3,7 +3,7 @@
  
 (setq c-default-style "k&r"
       c-basic-offset 2)
- 
+
 ;; Macaulay 2 start
 (load "~/.emacs-Macaulay2" t)
 ;; Macaulay 2 end
@@ -11,15 +11,6 @@
 ;;; For older Emacs
 (add-to-list 'load-path "~/.emacs.d/cl-lib")
 (require 'cl-lib)
-
-(add-to-list 'load-path "~/emacs-clojure/cider")
-(add-to-list 'load-path "~/emacs-clojure/clojure-mode")
-(add-to-list 'load-path "~/emacs-clojure/dash.el")
-;;(require 'cider) ;; Why doesn't this load?
-;
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
-(setq nrepl-hide-special-buffers t)
-(setq cider-repl-history-size 5000) 
 
 (setq column-number-mode t)
 (global-auto-revert-mode 1)
@@ -106,9 +97,31 @@ region."
   (normal-top-level-add-subdirs-to-load-path))
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("spinner" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
+
+;; Initialise packages
+(package-initialize)
+
+(add-to-list 'load-path "~/.emacs.d/use-package")
+(require 'use-package)
+
+
+(add-to-list 'load-path "~/.emacs.d/perl6-mode")
+(use-package perl6-mode
+  :ensure t
+  :defer t)
+
+(add-to-list 'load-path "~/emacs-clojure/cider")
+(add-to-list 'load-path "~/emacs-clojure/clojure-mode")
+(add-to-list 'load-path "~/emacs-clojure/dash.el")
+;(require 'cider) ;; Why doesn't this load?
+;
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(setq nrepl-hide-special-buffers t)
+(setq cider-repl-history-size 5000) 
 
 
 ;;; Prevent Extraneous Tabs
