@@ -109,3 +109,9 @@ export PATH=/usr/local/heroku/bin:$PATH
 
 
 export PATH=~/.rakudobrew/bin:$PATH
+
+
+### M2 build commands ###
+#
+# Last tried: 15.04:
+export M2_CONFIG_UBUNTU="./configure FC=gfortran --enable-download --enable-build-libraries=pari"
