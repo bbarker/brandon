@@ -7,3 +7,9 @@
 [submodule "emacs-clojure/dash.el"]
 	path = emacs-clojure/dash.el
 	url = https://github.com/magnars/dash.el.git
+[submodule ".emacs.d/perl6-mode"]
+	path = .emacs.d/perl6-mode
+	url = https://github.com/hinrik/perl6-mode.git
+[submodule ".emacs.d/use-package"]
+	path = .emacs.d/use-package
+	url = https://github.com/jwiegley/use-package.git
