@@ -1,6 +1,10 @@
 (load "~/.emacs.d/window-number.el" t)   ; t = true, for 'missing-ok'
 (window-number-mode)
 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'zenburn t)
+
+
 ;;(load "~/.emacs.d/zenburn.el" t)
 ;;(zenburn)
  
