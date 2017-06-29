@@ -121,6 +121,11 @@ region."
   :ensure t
   :defer t)
 
+(use-package ensime
+  :ensure t
+  :pin melpa-stable)
+
+
 (add-to-list 'load-path "~/emacs-clojure/cider")
 (add-to-list 'load-path "~/emacs-clojure/clojure-mode")
 (add-to-list 'load-path "~/emacs-clojure/dash.el")
